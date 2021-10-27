@@ -32,6 +32,13 @@ header{
     flex-basis: 450px;
 }
 
+.card header {
+    background-color: #288088;
+    border: solid 2px #45ADAD;
+    padding: 20px 0 20px 0;
+    border-radius: 7px 7px 0 0;
+}
+
 .gallery img {
     border: 10px #50C7C7 solid;
     margin: 10px;
@@ -40,9 +47,9 @@ header{
 
 .gallery{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     flex-direction: row;
 }
 
@@ -85,3 +92,21 @@ header{
     body {
         background-image: none;
     }
+
+    .nav_links {
+        display: flex;
+        flex-direction: row;
+        /* justify-content: space-around; */
+        column-gap: 175px;
+    }
+
+    .card {
+        display: flex;
+        flex-basis: 250px;
+        border: 2px #45ADAD solid;
+    }
+
+    .gallery, #gallery {
+        display: none;
+    }
+}
