@@ -20,7 +20,7 @@ header{
 
 .pricing{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -99,12 +99,21 @@ header{
 @media print {
     body {
         background-image: none;
+        background-color: #f1f1f1; 
+        font-family: serif;
     }
 
+    .pricing {
+        display: flex;
+        align-items: flex-end;
+        flex-flow: row nowrap;
+    }
+    
     .nav_links {
         display: flex;
         flex-direction: row;
         column-gap: 175px;
+        justify-content: space-around;
     }
 
     .card {
